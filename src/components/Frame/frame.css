@@ -1,0 +1,42 @@
+.frameContainer {
+    border-radius: 15px;
+    border: 5px solid black;
+    background-color: rgba(74, 73, 70, 0.366);
+}
+
+.frameInfoDisplay {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.frameInfoDisplay>* {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.frameLabelContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.frameLabelContainer>input {
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.frameLabel {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 0 0 black, 0 1px 0 black, -1px 0 0 black, 0 -1px 0 black;
+    border: 3px solid white;
+    /* width: auto; */
+    max-width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}

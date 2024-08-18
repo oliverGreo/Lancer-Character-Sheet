@@ -1,0 +1,47 @@
+.pilotinfoContainer {
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: white;
+    border: 5px solid red;
+    width: 80vw;
+    margin: 20px auto;
+}
+
+.pilotinfoContainer>* {
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.pilotInfoBox {
+    border: 5px solid red;
+    padding: 5px;
+    width: 80%;
+}
+
+.pilotInfoBoxValue {
+    padding: 5px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.pilotInfoBoxValue>* {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.skilltriggerContainer>* {
+    outline: 2px solid darkgreen;
+    margin-top: 15px;
+}
+
+.skilltriggerLabel {
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.pilotgear,
+.skilltriggers {
+    margin-bottom: 35px;
+}

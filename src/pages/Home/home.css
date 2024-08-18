@@ -1,0 +1,66 @@
+.homepage {
+    background-color: grey;
+    width: 95vw;
+    border-radius: 15px;
+    margin: auto;
+    color: white;
+
+    >* {
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .fullaction {}
+
+    .quickaction {
+        color: white;
+    }
+
+    .reaction {
+        color: white;
+        margin: 0;
+    }
+
+    .protocol {
+        color: white;
+    }
+
+    .passive {
+        color: white;
+    }
+
+    .weapon {
+        color: white;
+    }
+
+    .talent {
+        color: white;
+    }
+
+    .hack {
+        color: white;
+    }
+}
+
+.actionContainer {
+    width: 95vw;
+    margin: auto;
+}
+
+.actionContainer>* {
+    margin: 15px
+}
+
+.pic {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 400px) {
+    .pic {
+        width: 90vw;
+    }
+}

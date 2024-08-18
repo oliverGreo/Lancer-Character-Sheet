@@ -1,0 +1,12 @@
+.weaponslotContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 660px) {
+    .weaponslotContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+}

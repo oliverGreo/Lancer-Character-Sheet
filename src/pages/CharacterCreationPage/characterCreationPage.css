@@ -1,0 +1,56 @@
+.creationPageContainer {
+    width: 95vw;
+    margin: 0 auto 10px auto;
+    border: 5px solid #478CCF;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+.characterCreationPage>* {
+    margin: 0 auto 20px auto;
+    width: 90%;
+}
+
+.characterCreationPage>.alertModal {
+    width: 100%;
+}
+
+.pilotinformationContainer {
+    border-radius: 15px;
+    margin: 15px auto;
+    background-color: white;
+    border: 5px solid red;
+    width: 80vw;
+}
+
+.pilotinformationContainer>* {
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.creationSkilltriggerContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 10px;
+    align-items: stretch;
+}
+
+.creationSkilltriggerContainer>div {
+    display: grid;
+}
+
+.creationContainer>* {
+    margin-top: 10px;
+}
+
+.highlighted {
+    outline: 4px solid blue;
+    border-radius: 20px;
+}
+
+.confirmationButtonContainer {
+    display: flex;
+    justify-content: space-around;
+}

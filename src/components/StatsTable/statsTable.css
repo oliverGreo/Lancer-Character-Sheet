@@ -1,0 +1,44 @@
+/* fix this parent decides size*/
+.statsContainer {
+    border-radius: 15px;
+    width: 75vw;
+    background-color: rgb(212, 66, 13);
+    border: 3px solid white;
+}
+
+
+.statTable {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 15px;
+    padding: 0 0px 25px 25px;
+    justify-content: space-around;
+}
+
+.stat {
+    padding: 5px;
+}
+
+.statLabel {
+    background-color: lightgrey;
+    padding: 3px 3px;
+    margin-right: 5px;
+    clip-path: polygon(10px 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 20%)
+}
+
+.statValue {
+    background-color: white;
+    border: 1px solid grey;
+    font-weight: bold;
+    padding: 2px 5px;
+    clip-path: polygon(30% 0,
+            100% 0,
+            100% 70%,
+            70% 100%,
+            0 100%,
+            0 30%)
+}

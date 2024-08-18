@@ -1,0 +1,52 @@
+/* fix this parent decides size*/
+.skillsContainer {
+    border-radius: 15px;
+    width: 75vw;
+    background-color: rgb(212, 66, 13);
+    border: 3px solid white;
+}
+
+.skillTable {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 0 0px 25px 25px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 610px) {
+    .skillTable {
+        display: grid;
+        grid-template-columns: auto auto;
+        border-radius: 15px;
+    }
+}
+
+.skill {
+    padding: 5px;
+}
+
+.skillLabel {
+    background-color: lightgrey;
+    padding: 3px 3px;
+    margin-right: 5px;
+    clip-path: polygon(10px 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 20%)
+}
+
+.skillValue {
+    background-color: white;
+    border: 1px solid grey;
+    font-weight: bold;
+    padding: 2px 5px;
+    clip-path: polygon(30% 0,
+            100% 0,
+            100% 70%,
+            70% 100%,
+            0 100%,
+            0 30%)
+}

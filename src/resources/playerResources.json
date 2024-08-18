@@ -1,0 +1,33 @@
+{
+    "actions": [
+        {
+            "name": "Overwatch",
+            "type": "reaction",
+            "frequency": "1/round",
+            "reactionTrigger": "A hostile character STARTS any movement (including BOOST and other actions) inside one of your weapons’ THREAT.",
+            "description": "Trigger OVERWATCH, immediately using that weapon to SKIRMISH against that character as a reaction, before they move."
+        },
+        {
+            "name": "Brace",
+            "type": "reaction",
+            "frequency": "1/round",
+            "reactionTrigger": "You are hit by an attack and damage has been rolled.",
+            "description": "You count as having RESISTANCE to all damage, heat, and burn from the triggering attack, and until the end of your next turn, all other attacks against you are made at +1 accuracy. <br>Due to the stress of bracing, you cannot take reactions until the end of your next turn and on that turn, you can only take one quick action– you cannot OVERCHARGE, move normally, take full actions, or take free actions"
+        },
+        {
+            "name": "Bolster",
+            "type": "hack",
+            "description": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems. To BOLSTER, choose a character within SENSORS. They receive +2 accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at atime."
+        },
+        {
+            "name": "Scan",
+            "type": "hack",
+            "description": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy. To SCAN, choose a character or object within SENSORS and line of sight, then choose one of the following: <br>• Your target’s weapons, systems, and full statistics. <br>• One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on. <br>• Public information about the target that can be pulled from an info bank or records, such as the model number of a mech."
+        },
+        {
+            "name": "Lock On",
+            "type": "hack",
+            "description": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points. To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 accuracy on that attack, consuming the LOCK ON condition."
+        }
+    ]
+}

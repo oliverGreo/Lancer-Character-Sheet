@@ -1,0 +1,100 @@
+.weaponslot {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.weaponslot P {
+    text-align: center;
+}
+
+.weaponslotModalBackground {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+.weaponslotModalContent {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 80%;
+    max-height: 73vh;
+    overflow-y: auto;
+}
+
+.weaponslotModalContent>* {
+    margin-bottom: 15px;
+}
+
+.weaponslotModalLabel {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto 25px auto;
+    width: 80%;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+/*
+.slotframeContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.slotframeContainer>:nth-child(1) {
+    position: relative;
+    z-index: 10;
+}
+
+.slotframe,
+.slotframeHelperVertical,
+.slotframeHelperHorizontal,
+.slotframeHelperCenter {
+    position: absolute;
+}
+
+.slotframe {
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.slotframeHelperHorizontal {
+    top: 20%;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+}
+
+.slotframeHelperVertical {
+    top: 0;
+    left: 33%;
+    background-color: white;
+    z-index: 2;
+    width: 33%;
+    height: 100%;
+}
+
+.slotframeHelperCenter {
+    top: 1.5%;
+    left: 1.5%;
+    background-color: white;
+    z-index: 2;
+    width: 97%;
+    height: 97%;
+} */

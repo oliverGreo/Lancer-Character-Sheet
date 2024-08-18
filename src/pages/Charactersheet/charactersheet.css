@@ -1,0 +1,92 @@
+.charactersheetContainer {
+    display: flex;
+    flex-flow: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    padding-top: 3vh;
+}
+
+.charactersheetContainer>* {
+    background-color: #e0b889;
+    outline: 2px solid black;
+    padding: 3vh 0;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    height: 73vh;
+    border-radius: 25px;
+    overflow-y: scroll;
+}
+
+.charactersheetContainer>*>* {
+    margin: 2vh auto;
+}
+
+.sheetLabel {
+    background-color: rgb(239, 209, 142);
+    box-shadow: 3px 3px grey;
+    border: 2px solid black;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2vh auto 0 auto;
+    padding: 9px;
+    width: 85vw;
+}
+
+.sheetLabel>* {
+    border: 2px solid black;
+    border-radius: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 0 auto 3vh auto;
+    padding: 9px;
+    width: 80vw;
+}
+
+
+.systemsContainer {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    overflow-y: scroll;
+    height: 65vh
+}
+
+.systemEntry {
+    width: 90vw;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.saveButtonContainer {
+    outline: 3px solid black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin: 20px auto;
+    width: 70vw;
+    height: 15vh;
+    border-radius: 15px;
+}
+
+.saveButtonContainer * {
+    border-radius: 15px;
+    font-size: large;
+    color: black;
+    background-color: lightgreen;
+    padding: 3px 10px;
+}
+
+.deleteButton {
+    border: 2px solid pink;
+    background-color: red;
+    color: white;
+}

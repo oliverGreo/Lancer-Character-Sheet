@@ -1,0 +1,42 @@
+.mechskillName {
+    text-transform: capitalize;
+}
+
+
+
+.mechskillFlavortext {
+    color: white;
+    font-style: italic;
+    padding: 0 0 5px 10px;
+}
+
+.mechskillDescriptionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    flex-flow: row;
+    justify-content: space-between; */
+}
+
+.mechskillDescriptionContainer>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mechskillButton {
+    outline: 4px solid red;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin: 7px;
+}
+
+.buttonZero {
+    outline: 4px solid grey;
+    color: grey;
+}

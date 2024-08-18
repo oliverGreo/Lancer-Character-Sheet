@@ -1,0 +1,24 @@
+.tier {
+    background-color: #36C2CE;
+    padding: 8px;
+    border-radius: 15px;
+    color: black;
+    outline: 1px solid darkblue;
+}
+
+.tierName {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tierDescription {
+    outline: 1px solid darkblue;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}

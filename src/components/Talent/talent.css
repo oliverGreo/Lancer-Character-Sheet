@@ -1,0 +1,24 @@
+.talent {
+    background-color: #478CCF;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.talentName {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0 15px 15px;
+}
+
+
+.talentContent {
+    outline: 1px solid darkgree;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 10px
+}

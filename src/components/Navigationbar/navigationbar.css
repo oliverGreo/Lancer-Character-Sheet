@@ -1,0 +1,38 @@
+.navigationbar {
+    height: 8vh;
+    width: 100vw;
+    background-color: purple;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.navigationbar a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(156, 57, 156);
+    box-shadow: 2px 2px 0 rgb(65, 23, 62);
+    border: 1px solid grey;
+    width: auto;
+    height: 25px;
+    line-height: 23px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+
+.navigationbar .navbarDeleteButton {
+    color: white;
+    background-color: red;
+    box-shadow: 2px 2px 0 rgb(65, 23, 62);
+    border: 1px solid grey;
+    width: auto;
+    height: auto;
+    line-height: 23px;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 0 10px;
+}

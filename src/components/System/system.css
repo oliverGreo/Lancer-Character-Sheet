@@ -1,0 +1,141 @@
+.system {
+    background-color: #68BD44;
+    padding: 8px;
+    border-radius: 15px;
+    color: black;
+    outline: 1px solid darkgreen;
+}
+
+.systemName {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.systemTag {
+    color: white;
+    font-style: italic;
+    padding: 0 0 5px 10px;
+    text-transform: capitalize
+}
+
+.mountInfo {
+    color: white;
+    font-style: italic;
+    padding: 0 0 5px 10px;
+}
+
+.mountWeaponPickButton {
+    font-style: italic;
+    padding: 0 0 5px 10px;
+}
+
+.triggerDescription {
+    background-color: lightblue;
+    border-radius: 10px;
+    font-style: italic;
+    padding: 5px 0 5px 10px;
+    margin: 0 0px 5px 0px;
+}
+
+.systemDescription {
+    outline: 1px solid darkgreen;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.weapon {
+    background-color: darkgray;
+    outline: 1px solid grey;
+}
+
+.weapon .systemName {
+    text-shadow: 0 0 1px #000000;
+}
+
+.weapon .systemDescription {
+    outline: 1px solid grey;
+}
+
+.protocol {
+    background-color: #007676;
+    outline: 1px solid black;
+}
+
+.protocol .systemName {
+    text-shadow: 0 0 1px #000000;
+}
+
+.protocol .systemDescription {
+    outline: 1px solid black;
+}
+
+.mountName {
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: right;
+}
+
+.reaction {
+    background-color: rgb(233, 87, 87);
+    margin: 15px 15px 0 15px;
+}
+
+.quickaction {
+    background-color: #CD7F32;
+}
+
+.hack {
+    background-color: purple;
+}
+
+.inputFieldContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputFieldContainer * {
+    line-height: 30px;
+}
+
+/* .inputFieldContainerDropdown {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.inputField {
+    border-radius: 15px;
+    width: 80%;
+}
+
+.inputFieldContainerDropdown>div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputFieldContainerDropdown>div>* {
+    width: 47%;
+}
+
+.inputFieldContainerDropdown>input,
+.inputFieldContainerDropdown>select {
+    outline: 1px solid blue;
+    width: 30%;
+}
+
+
+.inputButton {
+    padding: 5px 10px;
+    text-align: center;
+    border: 5px solid grey;
+    color: grey;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}

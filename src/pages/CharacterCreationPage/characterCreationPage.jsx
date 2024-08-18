@@ -88,10 +88,10 @@ const CharacterCreationPage = () => {
     const showEverything = () => {
         setNewPilot({
             pilotinformation: {
-                name: 'Pilotname',
+                name: 'Pilotname McPilotface',
                 callsign: 'P-Callsign',
                 background: 'P-Background',
-                skilltriggers: ['Taunt', 'Fart', 'Complain'],
+                skilltriggers: ['Sleep', 'Rest', 'Complain'],
                 pilotgear: [{
                     name: 'Corrective',
                     tags: 'Limited 1 use',
@@ -170,9 +170,9 @@ const CharacterCreationPage = () => {
                 }]
             },
             mechInformation: {
-                name: 'm-Name',
+                name: 'Mech-Name 1',
                 frame: {
-                    name: 'Fat ppl scooter',
+                    name: 'Scooter',
                     manufacturer: 'Walmart',
                     stats: {
                         size: 11,
@@ -257,19 +257,49 @@ const CharacterCreationPage = () => {
                     systems: 0,
                     engineering: 0
                 },
-                systems: [{
-                    name: "Manipulators",
-                    cost: 1,
-                    description: "Your mech has an extra set of limbs. They are too small to have any combat benefit, but allow the mech to interact with objects that would otherwise be too small or sensitive (e.g., pilot-sized touch pads).",
-                    tags: 'Unique'
-                },
-                {
-                    name: "Pattern-A Smoke Charges",
-                    cost: 2,
-                    type: "quick action",
-                    description: "Expend a charge for one of the following effects: <br> Smoke Grenade (Grenade, Range 5, Blast 2): All characters and objects within the blast area benefit from soft cover until the end of your next turn, at which point the smoke disperses. <br> Smoke Mine (Mine, Blast 3): This mine detonates when any allied character moves over or adjacent to it. All characters and objects within the burst area benefit from soft cover until the end of the detonating character’s next turn, at which point the smoke disperses.",
-                    tags: 'Limited 3, Unique'
-                }]
+                systems: [
+                    {
+                        name: "Personalizations",
+                        cost: 1,
+                        description: "You gain +2 HP and, in consultation with the GM, you may establish a minor modification you have made to your mech. This mod has no numerical benefit beyond the additional HP it grants, but could provide other useful effects. If the GM agrees that this mod would help with either a pilot or mech skill check, you gain +1 accuracy for that check.",
+                        tags: 'Unique'
+                    },
+                    {
+                        name: "Stable Structure",
+                        cost: 2,
+                        description: "You gain +1 accuracy on saves to avoid PRONE or KNOCKBACK.",
+                        tags: 'Unique'
+                    },
+                    {
+                        name: "Turret Drones",
+                        type: "quick action",
+                        description: "Expend a charge to deploy a turret drone that attaches to any object or surface within Sensors and line of sight. Gain the Turret Attack reaction, which can be taken once for each deployed turret drone. Turret drones cannot be recalled and expire at the end of the scene.",
+                        cost: 2,
+                        extras: [
+                            {
+                                name: "Turret Attack",
+                                type: "reaction",
+                                frequency: "1/round per turret",
+                                reactionTrigger: "An allied character within Range 10 of a turret drone makes a successful attack.",
+                                description: "The turret drone deals 3 Kinetic damage to their target, as long as it has line of sight to their target."
+                            }
+                        ],
+                        tags: "Unique, Limited 3, Drone, Quick Action"
+                    },
+                    {
+                        name: "Pattern-A Smoke Charges",
+                        cost: 2,
+                        type: "quick action",
+                        description: "Expend a charge for one of the following effects: <br> Smoke Grenade (Grenade, Range 5, Blast 2): All characters and objects within the blast area benefit from soft cover until the end of your next turn, at which point the smoke disperses. <br> Smoke Mine (Mine, Blast 3): This mine detonates when any allied character moves over or adjacent to it. All characters and objects within the burst area benefit from soft cover until the end of the detonating character’s next turn, at which point the smoke disperses.",
+                        tags: 'Limited 3, Unique'
+                    },
+                    {
+                        name: "Manipulators",
+                        cost: 1,
+                        description: "Your mech has an extra set of limbs. They are too small to have any combat benefit, but allow the mech to interact with objects that would otherwise be too small or sensitive (e.g., pilot-sized touch pads).",
+                        tags: 'Unique'
+                    }
+                ]
             }
         })
     }
@@ -384,16 +414,20 @@ const CharacterCreationPage = () => {
     }
 
     // todo add custom error message and make this readable
+    const spentAllMechSkillPoints = newPilot.mechInformation.skills.hull + newPilot.mechInformation.skills.agility + newPilot.mechInformation.skills.systems + newPilot.mechInformation.skills.engineering === 2
     const everythingIsFilledOut =
         newPilot?.pilotinformation?.name !== '' &&
         newPilot?.pilotinformation?.callsign !== '' &&
         newPilot?.pilotinformation?.background !== '' &&
         newPilot?.pilotinformation?.skilltriggers?.length !== 0 &&
-        newPilot?.pilotinformation?.pilotgear?.length !== 0 &&
         newPilot?.mechInformation?.frame?.manufacturer !== '' &&
-        newPilot?.mechInformation?.systems?.length !== 0
+        newPilot?.pilotinformation?.talents?.length !== '' &&
+        spentAllMechSkillPoints &&
+        newPilot?.mechInformation?.systems?.length !== 0 &&
+        newPilot?.pilotinformation?.pilotgear?.length !== 0
 
-    // todo hgihlight not fully picked sachen
+    // todo highlight not fully picked categories
+
 
     return (
         <div className="characterCreationPage">

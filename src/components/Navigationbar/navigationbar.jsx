@@ -10,7 +10,6 @@ const Navigationbar = () => {
         <div className='navigationbar'>
             <a href='/'>Home</a>
             <a href='/charactersheet'>Character Sheet</a>
-            <a href='/npcs'>NPCs</a>
             {localStorage.getItem('lancerPlayer') && <button className='navbarDeleteButton' type='button' onClick={() => setNavbarModalIsOpen(true)}>x</button>}
             {navbarModalIsOpen && localStorage.getItem('lancerPlayer') && (
                 <AlertBox

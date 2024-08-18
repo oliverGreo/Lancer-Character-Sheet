@@ -73,9 +73,20 @@ const System = ({
                                     className='inputField'
                                     onChange={(event) => passValue(event.target.value)}
                                 >
-                                    <option value="" disabled selected>Select your Background</option>
+                                    <option
+                                        value=""
+                                        disabled
+                                        selected
+                                    >
+                                        Select your Background
+                                    </option>
                                     {possibleOptions?.map((option, index) => (
-                                        <option value={option} key={index}>{option}</option>
+                                        <option
+                                            value={option}
+                                            key={index}
+                                        >
+                                            {option}
+                                        </option>
                                     ))}
                                 </select>
                                 <input
@@ -101,7 +112,6 @@ const System = ({
             <div className={classname}>
                 <div className='systemName'>
                     <span>{system} +2</span>
-                    {/* <span>{system}{value !== undefined && ` +${value}`}</span> */}
                 </div>
             </div>
         )
@@ -172,7 +182,15 @@ const System = ({
                     </div>
                     <span className='systemTag alignTextRight smallerFont'>{type}{cost && type && ', '}{cost ? 'Cost: ' + cost : ''}</span>
                 </div>
-                {isActive && <div dangerouslySetInnerHTML={{ __html: description }} className='systemDescription' />}
+                {isActive &&
+                    <div className='systemDescription'>
+                        <div dangerouslySetInnerHTML={{ __html: description }} />
+                        {extras &&
+                            extras.map((extra, index) =>
+                                <System systemType={extra.type} system={extra} key={index} />
+                            )
+                        }
+                    </div>}
             </div>
         )
     }
@@ -227,13 +245,58 @@ const System = ({
                     <span>{name}</span>
                     <span className='systemTag'>{type}</span>
                 </div>
-                {reactionTrigger && <div className='triggerDescription'>Trigger: {reactionTrigger}</div>}
+                {reactionTrigger && <div className='triggerDescription'>Trigger: {reactionTrigger} </div>}
+                {frequency && <div className='triggerDescription frequencyDescription'>Frequency: {frequency}</div>}
                 <div dangerouslySetInnerHTML={{ __html: description }} className='systemDescription' />
             </div>
         )
     }
 
     return <p>undefined type</p>
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // this is only still here, because I can reuse parts of the original version
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+
+
     // if (systemType === 'weapodsadadsasdn') {
     //     return (
     //         <div className={'system'} onClick={handleToggle}>
